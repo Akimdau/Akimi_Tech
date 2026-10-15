@@ -1,0 +1,6 @@
+{
+  "version": "13.0.0",
+  "windows_url": "https://akimitech.netlify.app/cad/download/AkimitechCAD_Setup_13.0.0.exe",
+  "release_date": "2026-10-15",
+  "release_notes": "Initial public release. Netlist cache, visual revision diff, multi-language UI."
+}

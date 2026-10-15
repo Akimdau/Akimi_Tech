@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AkimiTech CAD — Documentation</title>
+<meta name="description" content="User manual and documentation for AkimiTech CAD v13.0.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../style.css">
+<style>
+  .docs-wrap {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 60px 24px 120px;
+    line-height: 1.75;
+  }
+  .docs-wrap h1 {
+    font-size: 42px;
+    margin: 0 0 8px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+  .docs-wrap .version {
+    opacity: 0.6;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+  .docs-wrap h2 {
+    margin: 56px 0 20px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    font-size: 24px;
+    font-weight: 600;
+    color: #f4a300;
+  }
+  .docs-wrap h3 {
+    margin: 32px 0 12px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .docs-wrap kbd {
+    background: rgba(255,255,255,0.1);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    border: 1px solid rgba(255,255,255,0.15);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.3);
+  }
+  .docs-wrap code {
+    background: rgba(255,255,255,0.06);
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: 'JetBrains Mono', monospace;
+    color: #f4a300;
+  }
+  .docs-wrap pre {
+    background: rgba(255,255,255,0.04);
+    padding: 16px 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    border: 1px solid rgba(255,255,255,0.08);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .docs-wrap pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+  }
+  .docs-wrap ol, .docs-wrap ul { padding-left: 24px; }
+  .docs-wrap li { margin: 8px 0; }
+  .docs-wrap table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    width: 100%;
+  }
+  .docs-wrap td {
+    padding: 10px 20px 10px 0;
+    vertical-align: top;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    font-size: 15px;
+  }
+  .docs-wrap a {
+    color: #4a7ec8;
+    text-decoration: none;
+  }
+  .docs-wrap a:hover { color: #f4a300; }
+  .docs-dl {
+    padding: 28px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(244,163,0,0.08), rgba(74,126,200,0.06));
+    border: 1px solid rgba(244,163,0,0.2);
+    margin: 32px 0 40px;
+    text-align: center;
+  }
+  .docs-dl a {
+    display: inline-block;
+    padding: 14px 32px;
+    background: #f4a300;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: transform 0.15s;
+  }
+  .docs-dl a:hover { transform: translateY(-2px); color: #000; }
+  .docs-back {
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-logo"><a href="/" style="color:inherit;text-decoration:none;">Akimi<span>Tech</span></a></div>
+  <ul class="nav-links">
+    <li><a href="/#hero">Home</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#services">Services</a></li>
+    <li><a href="/cad/">CAD</a></li>
+    <li><a href="/news.html">News</a></li>
+    <li><a href="/#contact">Contact</a></li>
+  </ul>
+  <div style="display:flex;gap:12px;align-items:center;">
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()">
+      <span id="themeIcon">🌙</span> <span id="themeLabel">Dark</span>
+    </button>
+  </div>
+</nav>
+
+<main class="docs-wrap">
+
+  <h1>AkimiTech CAD</h1>
+  <p class="version">v13.0.0 · Windows 10/11 · MIT licensed</p>
+
+  <div class="docs-dl">
+    <a href="/cad/download/latest">⬇ Download v13.0.0</a>
+  </div>
+
+  <h2>Installation</h2>
+  <ol>
+    <li>Click the download button above.</li>
+    <li>Double-click <code>AkimitechCAD_Setup_13.0.0.exe</code>.</li>
+    <li>Accept the UAC prompt.</li>
+    <li>Walk the wizard (defaults work).</li>
+    <li>Launch from the Start menu.</li>
+  </ol>
+  <p>No Python or other software is required. Works on a clean Windows 10 or 11 machine.</p>
+
+  <h2>Quick start</h2>
+  <ol>
+    <li><strong>File → New Project</strong></li>
+    <li><strong>IEC tab → Contactor Coil</strong> → click on the canvas</li>
+    <li><strong>Wires tab → Wire</strong> → click from pin to pin</li>
+    <li><strong>AkimiTech tab → Colour → IEC 60757 → Apply Now</strong></li>
+    <li><strong>AkimiTech tab → Verify</strong> to check the design</li>
+  </ol>
+
+  <h2>Keyboard shortcuts</h2>
+  <table>
+    <tr><td><kbd>Ctrl</kbd>+<kbd>N</kbd></td><td>New project</td></tr>
+    <tr><td><kbd>Ctrl</kbd>+<kbd>O</kbd></td><td>Open project</td></tr>
+    <tr><td><kbd>Ctrl</kbd>+<kbd>S</kbd></td><td>Save</td></tr>
+    <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd></td><td>Save As</td></tr>
+    <tr><td><kbd>Ctrl</kbd>+<kbd>Z</kbd></td><td>Undo</td></tr>
+    <tr><td><kbd>Ctrl</kbd>+<kbd>Y</kbd></td><td>Redo</td></tr>
+    <tr><td><kbd>Ctrl</kbd>+<kbd>C</kbd> / <kbd>V</kbd> / <kbd>X</kbd></td><td>Copy / Paste / Cut</td></tr>
+    <tr><td><kbd>Ctrl</kbd>+<kbd>A</kbd></td><td>Select all</td></tr>
+    <tr><td><kbd>Ctrl</kbd>+<kbd>D</kbd></td><td>Duplicate selection</td></tr>
+    <tr><td><kbd>Del</kbd></td><td>Delete selection</td></tr>
+    <tr><td><kbd>F2</kbd></td><td>Rename component or wire</td></tr>
+    <tr><td><kbd>F7</kbd></td><td>Toggle grid</td></tr>
+    <tr><td><kbd>F8</kbd></td><td>Toggle ortho mode</td></tr>
+    <tr><td><kbd>F9</kbd></td><td>Toggle object snap</td></tr>
+    <tr><td><kbd>Ctrl</kbd>+<kbd>T</kbd></td><td>Theme editor</td></tr>
+    <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd></td><td>Customize ribbon</td></tr>
+    <tr><td><kbd>Ctrl</kbd>+<kbd>0</kbd></td><td>Zoom 100%</td></tr>
+    <tr><td><kbd>Ctrl</kbd>+<kbd>=</kbd> / <kbd>-</kbd></td><td>Zoom in / out</td></tr>
+    <tr><td><kbd>Ctrl</kbd>+<kbd>E</kbd></td><td>Zoom extents</td></tr>
+    <tr><td><kbd>F11</kbd></td><td>Full screen</td></tr>
+    <tr><td><kbd>Esc</kbd></td><td>Cancel tool / clear selection</td></tr>
+  </table>
+
+  <h2>Command line aliases</h2>
+  <p>Type an alias into the command line and press Enter.</p>
+  <ul>
+    <li><strong>Draw:</strong> <code>L</code> <code>C</code> <code>REC</code> <code>A</code> <code>PL</code> <code>T</code></li>
+    <li><strong>Modify:</strong> <code>TR</code> <code>EX</code> <code>F</code> <code>CHA</code> <code>O</code> <code>MI</code></li>
+    <li><strong>Wire:</strong> <code>WID</code>, <code>AWNS</code></li>
+    <li><strong>Colour:</strong> <code>WCI</code>, <code>WCDC</code>, <code>WCAC</code>, <code>WCOL</code></li>
+    <li><strong>Verify:</strong> <code>VERIFY</code> or <code>WV</code></li>
+    <li><strong>Reports:</strong> <code>BOM</code> <code>NET</code> <code>XR</code> <code>WR</code> <code>PLC</code></li>
+    <li><strong>File:</strong> <code>W</code>, <code>OPEN</code>, <code>PDF</code>, <code>DXF</code></li>
+  </ul>
+
+  <h2>User data locations</h2>
+  <table>
+    <tr><td><code>~/.akimitech_symbols.json</code></td><td>Custom symbols</td></tr>
+    <tr><td><code>~/.akimitech_catalog.sqlite</code></td><td>Manufacturer parts database</td></tr>
+    <tr><td><code>~/.akimitech_revisions.json</code></td><td>Revision snapshots</td></tr>
+    <tr><td><code>~/.akimitech_recent.json</code></td><td>Recent files</td></tr>
+    <tr><td><code>~/.akimitech_cad.log</code></td><td>Error log</td></tr>
+  </table>
+
+  <h2>Adding manufacturer parts</h2>
+  <p>Open <strong>AkimiTech tab → Catalog</strong> → <strong>Import CSV</strong>. Your file must have these headers:</p>
+  <pre><code>mpn,manufacturer,description,symbol_name,category,price,datasheet_url</code></pre>
+  <p>Set <code>symbol_name</code> to match the AkimiTech symbol you want the part attached to (e.g. <code>Contactor Coil</code>, <code>Fuse</code>). Once imported, the part appears in the <strong>Select part…</strong> dialog and is carried through to the BOM.</p>
+
+  <h2>Troubleshooting</h2>
+  <ul>
+    <li><strong>App doesn't launch:</strong> confirm Windows 10 or 11, 64-bit.</li>
+    <li><strong>Antivirus warning:</strong> the installer is unsigned. Click "More info" → "Run anyway".</li>
+    <li><strong>DWG import fails:</strong> the file must be a <code>.dxf</code> with named BLOCK definitions.</li>
+    <li><strong>Live PLC doesn't connect:</strong> install <code>pymodbus</code> via <code>pip install pymodbus</code>, then reopen the dialog.</li>
+  </ul>
+
+  <h2>Support</h2>
+  <p>Email <a href="mailto:akim1dau2@gmail.com">akim1dau2@gmail.com</a> with your version number (from <strong>Help → About</strong>) and any traceback from <code>~/.akimitech_cad.log</code>.</p>
+
+  <div class="docs-back">
+    <a href="/cad/">← Back to AkimiTech CAD home</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 <strong>AkimiTech</strong> · Built by Akim D. Malith · Juba, Republic of South Sudan</p>
+</footer>
+
+<script src="/script.js"></script>
+<script>
+  (function() {
+    const saved = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', saved);
+    const icon = document.getElementById('themeIcon');
+    const label = document.getElementById('themeLabel');
+    if (icon) icon.textContent = saved === 'dark' ? '🌙' : '☀️';
+    if (label) label.textContent = saved === 'dark' ? 'Dark' : 'Light';
+  })();
+</script>
+
+</body>
+</html>
