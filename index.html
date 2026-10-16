@@ -8,7 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <!-- EmailJS Commented Out as requested -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> -->
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,6 +21,7 @@
   <div class="nav-logo">Akimi<span>Tech</span></div>
   <ul class="nav-links">
     <li><a href="#hero">Home</a></li>
+    <li><a href="#software">Software</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#services">Services</a></li>
@@ -38,6 +42,7 @@
 <!-- Mobile nav -->
 <div class="mobile-nav" id="mobileNav">
   <a href="#hero" onclick="closeMobileNav()">Home</a>
+  <a href="#software" onclick="closeMobileNav()">Software</a>
   <a href="#about" onclick="closeMobileNav()">About</a>
   <a href="#experience" onclick="closeMobileNav()">Experience</a>
   <a href="#services" onclick="closeMobileNav()">Services</a>
@@ -65,7 +70,7 @@
         Custom software, web applications, and automation tools — crafted with precision from the heart of South Sudan.
       </p>
       <div class="hero-btns reveal" style="transition-delay:0.3s">
-        <button class="btn-prim" onclick="openModal('General Project')">🚀 Start a Project</button>
+        <button class="btn-prim" onclick="scrollToForm('General Project')">🚀 Start a Project</button>
         <button class="btn-ghost" onclick="smooth('about')">Learn More ↓</button>
       </div>
     </div>
@@ -79,6 +84,78 @@
         <span class="t-title">akim@akimitech ~ developer.py</span>
       </div>
       <div class="t-body" id="termEl"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SOFTWARE SHOWCASE ─────────────────────── -->
+<section id="software">
+  <div class="section-max">
+    <div class="eyebrow reveal">My Software</div>
+    <h2 class="sec-h2 reveal">Tools &amp; Applications I've Built</h2>
+    <p class="sec-sub reveal" style="margin-bottom:40px;">
+      Explore my latest software projects. Each tool is engineered to solve specific problems with efficiency and clean design. Download links are provided below.
+    </p>
+
+    <div class="software-grid">
+      
+      <!-- Software Card 1 -->
+      <div class="software-card reveal">
+        <div class="software-img">
+          <!-- Replace 'images/software1.png' with your actual image path -->
+          <img src="images/software1.png" alt="Software Name 1">
+        </div>
+        <div class="software-info">
+          <h3>Akimi Automation Tool</h3>
+          <p>A Python-powered desktop application that automates repetitive data entry tasks, saving hours of manual work.</p>
+          <div class="software-tags">
+            <span>Python</span>
+            <span>Automation</span>
+          </div>
+          <a href="https://github.com/yourusername/your-repo/releases" target="_blank" class="btn-download">
+            ⬇️ Download for Windows
+          </a>
+        </div>
+      </div>
+
+      <!-- Software Card 2 -->
+      <div class="software-card reveal" style="transition-delay:0.1s">
+        <div class="software-img">
+          <!-- Replace 'images/software2.png' with your actual image path -->
+          <img src="images/software2.png" alt="Software Name 2">
+        </div>
+        <div class="software-info">
+          <h3>AkimiTech Data Dashboard</h3>
+          <p>A web-based dashboard for visualizing business metrics in real-time. Built with JavaScript and Chart.js.</p>
+          <div class="software-tags">
+            <span>JavaScript</span>
+            <span>Web App</span>
+          </div>
+          <a href="https://your-dashboard-link.com" target="_blank" class="btn-download">
+            🌐 Launch Web App
+          </a>
+        </div>
+      </div>
+
+      <!-- Software Card 3 -->
+      <div class="software-card reveal" style="transition-delay:0.2s">
+        <div class="software-img">
+          <!-- Replace 'images/software3.png' with your actual image path -->
+          <img src="images/software3.png" alt="Software Name 3">
+        </div>
+        <div class="software-info">
+          <h3>System Monitor Utility</h3>
+          <p>A lightweight C++ utility that monitors CPU and memory usage, logging performance data for system analysis.</p>
+          <div class="software-tags">
+            <span>C++</span>
+            <span>System</span>
+          </div>
+          <a href="https://github.com/yourusername/your-repo/releases" target="_blank" class="btn-download">
+            ⬇️ Download for Linux
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -150,7 +227,7 @@
         </div>
       </div>
 
-      <button class="btn-prim reveal" onclick="openModal('Consultation')">Work With Me →</button>
+      <button class="btn-prim reveal" onclick="scrollToForm('Consultation')">Work With Me →</button>
     </div>
   </div>
 </section>
@@ -217,37 +294,37 @@
         <div class="srv-icon">🌐</div>
         <h3>Web Development</h3>
         <p>Modern, responsive websites and web applications built with clean code and a focus on performance and usability.</p>
-        <button class="btn-order" onclick="openModal('Web Development')">Order Now</button>
+        <button class="btn-order" onclick="scrollToForm('Web Development')">Order Now</button>
       </div>
       <div class="srv-card reveal" style="transition-delay:0.1s">
         <div class="srv-icon">🖥️</div>
         <h3>Desktop Applications</h3>
         <p>Cross-platform desktop software using Python and C++ for powerful, high-performance local workflows.</p>
-        <button class="btn-order" onclick="openModal('Desktop Application')">Order Now</button>
+        <button class="btn-order" onclick="scrollToForm('Desktop Application')">Order Now</button>
       </div>
       <div class="srv-card reveal" style="transition-delay:0.2s">
         <div class="srv-icon">🤖</div>
         <h3>Automation Scripts</h3>
         <p>Python-powered automation tools that eliminate repetitive tasks and save your team hours every week.</p>
-        <button class="btn-order" onclick="openModal('Automation Script')">Order Now</button>
+        <button class="btn-order" onclick="scrollToForm('Automation Script')">Order Now</button>
       </div>
       <div class="srv-card reveal" style="transition-delay:0.05s">
         <div class="srv-icon">⚙️</div>
         <h3>System Programming</h3>
         <p>Low-level system software and utilities in C and C++ engineered for reliability and maximum performance.</p>
-        <button class="btn-order" onclick="openModal('System Programming')">Order Now</button>
+        <button class="btn-order" onclick="scrollToForm('System Programming')">Order Now</button>
       </div>
       <div class="srv-card reveal" style="transition-delay:0.15s">
         <div class="srv-icon">📊</div>
         <h3>Data Solutions</h3>
         <p>Data pipelines, analysis scripts, and dashboards that turn raw data into actionable business insights.</p>
-        <button class="btn-order" onclick="openModal('Data Solutions')">Order Now</button>
+        <button class="btn-order" onclick="scrollToForm('Data Solutions')">Order Now</button>
       </div>
       <div class="srv-card reveal" style="transition-delay:0.25s">
         <div class="srv-icon">💡</div>
         <h3>Tech Consultation</h3>
         <p>Strategic technology advice to help you make the right software decisions for your business or project.</p>
-        <button class="btn-order" onclick="openModal('Tech Consultation')">Book a Session</button>
+        <button class="btn-order" onclick="scrollToForm('Tech Consultation')">Book a Session</button>
       </div>
     </div>
   </div>
@@ -294,35 +371,69 @@
       </div>
     </div>
 
-    <!-- Right: form -->
+    <!-- Right: Netlify Form -->
     <div class="form-box reveal">
-      <div class="form-box-title">Send a Message</div>
-      <div class="fg">
-        <label>Your Name</label>
-        <input type="text" id="cName" placeholder="Full name">
-      </div>
-      <div class="fg">
-        <label>Email Address</label>
-        <input type="email" id="cEmail" placeholder="you@example.com">
-      </div>
-      <div class="fg">
-        <label>Service Interested In</label>
-        <select id="cService">
-          <option>Web Development</option>
-          <option>Desktop Application</option>
-          <option>Automation Script</option>
-          <option>System Programming</option>
-          <option>Data Solutions</option>
-          <option>Tech Consultation</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="fg">
-        <label>Your Message</label>
-        <textarea id="cMsg" placeholder="Tell me about your project..."></textarea>
-      </div>
-      <button class="btn-prim" style="width:100%" onclick="sendMsg()">Send Message →</button>
-      <div class="success-note" id="cSuccess">✅ Message received! I'll get back to you within 24 hours.</div>
+      <div class="form-box-title">Request a Service</div>
+      
+      <form name="client-request" method="POST" data-netlify="true" id="clientForm">
+        <!-- Required hidden input for Netlify -->
+        <input type="hidden" name="form-name" value="client-request" />
+
+        <div class="fg">
+          <label>Your Name</label>
+          <input type="text" name="name" placeholder="Full name" required />
+        </div>
+
+        <div class="fg">
+          <label>Company Name</label>
+          <input type="text" name="company" placeholder="Your company" required />
+        </div>
+
+        <div class="fg">
+          <label>Service Interested In</label>
+          <select name="service" id="formService" required>
+            <option value="">-- Select a service --</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Desktop Application">Desktop Application</option>
+            <option value="Automation Script">Automation Script</option>
+            <option value="System Programming">System Programming</option>
+            <option value="Data Solutions">Data Solutions</option>
+            <option value="Tech Consultation">Tech Consultation</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="fg">
+          <label>Expected Duration</label>
+          <select name="duration" required>
+            <option value="">-- Select duration --</option>
+            <option value="Less than 1 month">Less than 1 month</option>
+            <option value="1 to 3 months">1 to 3 months</option>
+            <option value="3 to 6 months">3 to 6 months</option>
+            <option value="More than 6 months">More than 6 months</option>
+          </select>
+        </div>
+
+        <div class="fg">
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="you@example.com" required />
+        </div>
+
+        <!-- Payment Policy Notice -->
+        <div style="background-color: rgba(255, 193, 7, 0.1); border: 1px solid rgba(255, 193, 7, 0.3); padding: 15px; margin-bottom: 15px; border-radius: 8px;">
+          <p style="margin-top: 0; margin-bottom: 8px; font-weight: 600; color: #ffc107;">⚠️ Important Payment Policy</p>
+          <p style="font-size: 0.85rem; margin-bottom: 12px; opacity: 0.9;">To secure your project slot and begin work, <strong>full payment (or a deposit) must be made upfront</strong>. We will contact you with an invoice and payment link after reviewing your request.</p>
+          
+          <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; font-size: 0.85rem;">
+            <input type="checkbox" name="payment-agreement" required style="margin-top: 3px; width: auto;" />
+            <span>I understand and agree that payment must be made before services commence.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn-prim" style="width:100%">Submit Request →</button>
+      </form>
+
+      <div class="success-note" id="cSuccess" style="display:none;">✅ Request received! I'll get back to you within 24 hours.</div>
     </div>
   </div>
 </section>
@@ -334,50 +445,54 @@
   <p style="margin-top:6px;font-size:0.74rem;opacity:0.6;">Python · C · C++ · JavaScript</p>
 </footer>
 
-<!-- ─── ORDER MODAL ────────────────────────────── -->
-<div class="modal-bg" id="modalBg" onclick="bgClose(event)">
-  <div class="modal">
-    <button class="modal-close" onclick="closeModal()">×</button>
-    <div class="modal-title">Place an Order</div>
-    <p class="modal-sub">Service: <span id="mService">Web Development</span></p>
-    <div class="fg">
-      <label>Your Name</label>
-      <input type="text" id="oName" placeholder="Full name">
-    </div>
-    <div class="fg">
-      <label>Phone / WhatsApp</label>
-      <input type="tel" id="oPhone" placeholder="+211...">
-    </div>
-    <div class="fg">
-      <label>Project Description</label>
-      <textarea id="oDesc" placeholder="Describe what you need built..." style="height:110px;"></textarea>
-    </div>
-    <div class="fg">
-      <label>Budget Range</label>
-      <select id="oBudget">
-        <option>Under $100</option>
-        <option>$100 – $500</option>
-        <option>$500 – $1,000</option>
-        <option>$1,000+</option>
-        <option>Let's Discuss</option>
-      </select>
-    </div>
-    <div class="fg">
-      <label>Timeline</label>
-      <select id="oTime">
-        <option>As soon as possible</option>
-        <option>Within 1 week</option>
-        <option>1–2 weeks</option>
-        <option>1 month</option>
-        <option>Flexible</option>
-      </select>
-    </div>
-    <button class="btn-prim" style="width:100%;margin-top:4px;" onclick="submitOrder()">Submit Order →</button>
-    <div class="success-note" id="oSuccess">🎉 Order received! Akim will contact you within 24 hours.</div>
-  </div>
-</div>
-
 <script src="script.js"></script>
 <script src="index.js"></script>
+
+<script>
+  // 1. Function to scroll to the form and pre-select the service
+  function scrollToForm(serviceName) {
+    const formSection = document.getElementById('contact');
+    const serviceDropdown = document.getElementById('formService');
+    
+    // Scroll to the contact section
+    formSection.scrollIntoView({ behavior: 'smooth' });
+    
+    // Pre-select the service in the dropdown if it matches an option
+    if (serviceDropdown) {
+      for (let i = 0; i < serviceDropdown.options.length; i++) {
+        if (serviceDropdown.options[i].value === serviceName) {
+          serviceDropdown.selectedIndex = i;
+          break;
+        }
+      }
+    }
+  }
+
+  // 2. Handle Netlify Form Submission without page reload
+  const form = document.getElementById('clientForm');
+  const successNote = document.getElementById('cSuccess');
+
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // Stop the page from reloading
+      
+      const formData = new FormData(form);
+      
+      fetch('/', {
+        method: 'POST',
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
+      })
+      .then(() => {
+        form.style.display = 'none'; // Hide the form
+        successNote.style.display = 'block'; // Show success message
+      })
+      .catch((error) => {
+        alert('Error submitting form: ' + error);
+      });
+    });
+  }
+</script>
+
 </body>
 </html>
