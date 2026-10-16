@@ -3,31 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AkimiTech | Software Engineering Solutions</title>
-  <link rel="canonical" href="https://akimitech.netlify.app/" />
+  <title>News &amp; Software Launches | AkimiTech</title>
+  <meta name="description" content="Latest AkimiTech software releases — CAD, School Management, and Finance Tracker — and how they change the way people work in South Sudan.">
+  <link rel="canonical" href="https://akimitech.netlify.app/news.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
-  <!-- EmailJS Commented Out as requested -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> -->
-  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- ─── NAV ─────────────────────────────────── -->
 <nav id="nav">
-  <div class="nav-logo">Akimi<span>Tech</span></div>
+  <a href="index.html" class="nav-logo" style="text-decoration:none;">Akimi<span>Tech</span></a>
   <ul class="nav-links">
-    <li><a href="#hero">Home</a></li>
-    <li><a href="#software">Software</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#services">Services</a></li>
+    <li><a href="index.html#hero">Home</a></li>
+    <li><a href="index.html#software">Software</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#services">Services</a></li>
     <li><a href="/cad/">CAD</a></li>
-    <li><a href="news.html">News</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="news.html" style="color:var(--primary);">News</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
   </ul>
   <div style="display:flex;gap:12px;align-items:center;">
     <button class="theme-btn" id="themeBtn" onclick="toggleTheme()">
@@ -41,457 +37,232 @@
 
 <!-- Mobile nav -->
 <div class="mobile-nav" id="mobileNav">
-  <a href="#hero" onclick="closeMobileNav()">Home</a>
-  <a href="#software" onclick="closeMobileNav()">Software</a>
-  <a href="#about" onclick="closeMobileNav()">About</a>
-  <a href="#experience" onclick="closeMobileNav()">Experience</a>
-  <a href="#services" onclick="closeMobileNav()">Services</a>
+  <a href="index.html#hero">Home</a>
+  <a href="index.html#software">Software</a>
+  <a href="index.html#about">About</a>
+  <a href="index.html#services">Services</a>
   <a href="/cad/">CAD</a>
-  <a href="news.html" onclick="closeMobileNav()">News</a>
-  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  <a href="news.html">News</a>
+  <a href="index.html#contact">Contact</a>
 </div>
 
-<!-- ─── HERO ─────────────────────────────────── -->
-<section id="hero">
-  <div class="hero-grid"></div>
-  <div class="hero-orb" id="orb"></div>
-  <div class="hero-inner">
-    <!-- Left: text -->
-    <div>
-      <div class="hero-badge reveal">
-        <div class="badge-dot"></div>
-        Available for Projects &nbsp;·&nbsp; Juba, South Sudan
-      </div>
-      <h1 class="reveal" style="transition-delay:0.1s">
-        Engineering Digital<br>
-        <span class="grad">Solutions That Last</span>
-      </h1>
-      <p class="hero-sub reveal" style="transition-delay:0.2s">
-        Custom software, web applications, and automation tools — crafted with precision from the heart of South Sudan.
-      </p>
-      <div class="hero-btns reveal" style="transition-delay:0.3s">
-        <button class="btn-prim" onclick="scrollToForm('General Project')">🚀 Start a Project</button>
-        <button class="btn-ghost" onclick="smooth('about')">Learn More ↓</button>
-      </div>
-    </div>
-
-    <!-- Right: terminal -->
-    <div class="terminal-wrap reveal" style="transition-delay:0.25s">
-      <div class="t-bar">
-        <div class="t-dot t-red"></div>
-        <div class="t-dot t-yel"></div>
-        <div class="t-dot t-grn"></div>
-        <span class="t-title">akim@akimitech ~ developer.py</span>
-      </div>
-      <div class="t-body" id="termEl"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ─── SOFTWARE SHOWCASE ─────────────────────── -->
-<section id="software">
+<!-- ─── PAGE HEADER ─────────────────────────── -->
+<section id="news-hero" style="padding-top:140px; padding-bottom:40px;">
   <div class="section-max">
-    <div class="eyebrow reveal">My Software</div>
-    <h2 class="sec-h2 reveal">Tools &amp; Applications I've Built</h2>
-    <p class="sec-sub reveal" style="margin-bottom:40px;">
-      Explore my latest software projects. Each tool is engineered to solve specific problems with efficiency and clean design. Download links are provided below.
+    <div class="eyebrow reveal">Latest Updates</div>
+    <h1 class="reveal" style="font-size:clamp(2rem,4vw,3rem);margin-bottom:16px;">
+      Software Launches &amp;<br>
+      <span class="grad">Real-World Impact</span>
+    </h1>
+    <p class="sec-sub reveal" style="max-width:640px;font-size:1.05rem;">
+      Every AkimiTech release is built to change how people work — faster, cheaper,
+      and more accurate than the paper-based methods they replace. Here's what we've
+      shipped recently and why it matters.
     </p>
-
-    <div class="software-grid">
-      
-      <!-- Software Card 1 -->
-      <div class="software-card reveal">
-        <div class="software-img">
-          <!-- Replace 'images/software1.png' with your actual image path -->
-          <img src="images/software1.png" alt="Software Name 1">
-        </div>
-        <div class="software-info">
-          <h3>Akimi Automation Tool</h3>
-          <p>A Python-powered desktop application that automates repetitive data entry tasks, saving hours of manual work.</p>
-          <div class="software-tags">
-            <span>Python</span>
-            <span>Automation</span>
-          </div>
-          <a href="https://github.com/yourusername/your-repo/releases" target="_blank" class="btn-download">
-            ⬇️ Download for Windows
-          </a>
-        </div>
-      </div>
-
-      <!-- Software Card 2 -->
-      <div class="software-card reveal" style="transition-delay:0.1s">
-        <div class="software-img">
-          <!-- Replace 'images/software2.png' with your actual image path -->
-          <img src="images/software2.png" alt="Software Name 2">
-        </div>
-        <div class="software-info">
-          <h3>AkimiTech Data Dashboard</h3>
-          <p>A web-based dashboard for visualizing business metrics in real-time. Built with JavaScript and Chart.js.</p>
-          <div class="software-tags">
-            <span>JavaScript</span>
-            <span>Web App</span>
-          </div>
-          <a href="https://your-dashboard-link.com" target="_blank" class="btn-download">
-            🌐 Launch Web App
-          </a>
-        </div>
-      </div>
-
-      <!-- Software Card 3 -->
-      <div class="software-card reveal" style="transition-delay:0.2s">
-        <div class="software-img">
-          <!-- Replace 'images/software3.png' with your actual image path -->
-          <img src="images/software3.png" alt="Software Name 3">
-        </div>
-        <div class="software-info">
-          <h3>System Monitor Utility</h3>
-          <p>A lightweight C++ utility that monitors CPU and memory usage, logging performance data for system analysis.</p>
-          <div class="software-tags">
-            <span>C++</span>
-            <span>System</span>
-          </div>
-          <a href="https://github.com/yourusername/your-repo/releases" target="_blank" class="btn-download">
-            ⬇️ Download for Linux
-          </a>
-        </div>
-      </div>
-
-    </div>
   </div>
 </section>
 
-<!-- ─── ABOUT ─────────────────────────────────── -->
-<section id="about">
-  <div class="about-grid">
-    <!-- Profile card -->
-    <div class="profile-card reveal">
-      <div class="avatar">
-        <img src="akim_potriat.png" alt="Akim D. Malith">
+<!-- ─── RELEASE FEED ────────────────────────── -->
+<section id="news-feed" style="padding-top:20px;">
+  <div class="section-max">
+
+    <!-- ─── FEATURED RELEASE ──────────────────── -->
+    <div class="release-featured reveal">
+      <div class="release-featured-img">
+        <img src="images/cad.png" alt="AkimiTech CAD">
+        <span class="news-badge">🔥 Featured Release</span>
       </div>
-      <div class="p-name">Akim D. Malith</div>
-      <div class="p-role">CEO &amp; Founder · AkimiTech</div>
-      <ul class="p-info">
-        <li><span class="p-icon">🎓</span>Software Engineer (UoJ) · 2nd Year</li>
-        <li><span class="p-icon">📧</span>akim1dau2@gmail.com</li>
-        <li><span class="p-icon">📞</span>+211 922 708 878</li>
-        <li><span class="p-icon">📍</span>Juba, Republic of South Sudan</li>
-      </ul>
-      <div style="margin-top:24px;">
-        <div class="eyebrow" style="justify-content:center;margin-bottom:10px;">Languages</div>
-        <div class="lang-row" style="justify-content:center;">
-          <span class="lang-badge">Python</span>
-          <span class="lang-badge">C</span>
-          <span class="lang-badge">C++</span>
-          <span class="lang-badge">JavaScript</span>
+      <div class="release-featured-body">
+        <div class="news-date">📅 Released October 2026</div>
+        <h2 class="release-featured-title">AkimiTech CAD — Drawings Without the Paper</h2>
+        <p class="release-featured-desc">
+          A lightweight Computer-Aided Design tool that puts professional drafting
+          power into the hands of engineers, architects, and draftsmen in Juba and
+          beyond. Design 2D floor plans, structural drawings, and schematics entirely
+          on-screen — no plotter paper, no expensive mistakes, no waiting for a
+          printing shop.
+        </p>
+
+        <div class="news-impact">
+          <span class="impact-label">How it changes the working environment</span>
+          <ul>
+            <li><strong>60% faster drawings</strong> — no more redrawing by hand when a client requests a change</li>
+            <li><strong>Cuts printing costs</strong> — every revision lives in the file, not on a new sheet of paper</li>
+            <li><strong>Instant sharing</strong> — send a design by email or WhatsApp instead of hand-delivering copies</li>
+            <li><strong>Fewer costly errors</strong> — dimensions and layers are checked automatically</li>
+            <li><strong>Opens the door for young engineers</strong> — learn modern CAD without needing an expensive workstation</li>
+          </ul>
+        </div>
+
+        <div class="release-actions">
+          <a href="index.html#software" class="btn-prim">View in Software Showcase</a>
+          <a href="index.html#contact" class="btn-ghost">Request Custom Build</a>
         </div>
       </div>
     </div>
 
-    <!-- Bio & skills -->
-    <div>
-      <div class="eyebrow reveal">About Me</div>
-      <h2 class="sec-h2 reveal">Passionate engineer building tomorrow's solutions today</h2>
-      <p class="sec-sub reveal" style="margin-bottom:28px;">
-        I'm Akim D. Malith — a second-year Software Engineering student at the University of Juba and founder of AkimiTech. I build efficient, reliable software tailored to client needs, from small automation scripts to full web applications. My mission: bring world-class software craftsmanship to South Sudan and beyond.
+    <!-- ─── OTHER RELEASES ─────────────────────── -->
+    <div class="release-grid">
+
+      <!-- School Management -->
+      <article class="release-card reveal">
+        <div class="release-card-img">
+          <img src="images/school.png" alt="AkimiTech School Management">
+          <span class="news-badge">Now Available</span>
+        </div>
+        <div class="release-card-body">
+          <div class="news-date">📅 Released September 2026</div>
+          <h3 class="release-card-title">AkimiTech School Management — The End of Paper Registers</h3>
+          <p class="release-card-desc">
+            A complete system for schools to track students, staff, fees, subjects,
+            and exam results. Term reports that took weeks to compile now generate
+            in minutes, with automatic ranking and averages.
+          </p>
+
+          <div class="news-impact">
+            <span class="impact-label">Impact on schools</span>
+            <ul>
+              <li><strong>10+ hours saved</strong> per teacher each report season</li>
+              <li><strong>Zero lost payments</strong> — every fee is timestamped and searchable</li>
+              <li><strong>Accurate results</strong> — no more re-counting marks by hand</li>
+              <li><strong>Parent confidence</strong> — reports delivered on time, every term</li>
+            </ul>
+          </div>
+
+          <a href="index.html#software" class="news-link">See details →</a>
+        </div>
+      </article>
+
+      <!-- Finance Tracker -->
+      <article class="release-card reveal" style="transition-delay:0.1s">
+        <div class="release-card-img">
+          <img src="images/finance.png" alt="AkimiTech Finance Tracker">
+          <span class="news-badge">Popular</span>
+        </div>
+        <div class="release-card-body">
+          <div class="news-date">📅 Released August 2026</div>
+          <h3 class="release-card-title">AkimiTech Finance Tracker — Know Where Every Pound Goes</h3>
+          <p class="release-card-desc">
+            A simple, powerful tool for shop owners, small businesses, and households
+            to log daily income and expenses, see weekly summaries, and understand
+            real profit — not just what's left in the till.
+          </p>
+
+          <div class="news-impact">
+            <span class="impact-label">Impact on business</span>
+            <ul>
+              <li><strong>Finds spending leaks</strong> in days, not months</li>
+              <li><strong>Ends guesswork</strong> — real numbers for every decision</li>
+              <li><strong>Loan-ready</strong> — clean financial records help secure funding</li>
+              <li><strong>Household clarity</strong> — families plan with confidence</li>
+            </ul>
+          </div>
+
+          <a href="index.html#software" class="news-link">See details →</a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- ─── ROADMAP / COMING SOON ─────────────── -->
+    <div class="roadmap reveal">
+      <div class="eyebrow">Coming Next</div>
+      <h2 class="sec-h2" style="margin-bottom:20px;">What We're Building Now</h2>
+      <p class="sec-sub" style="margin-bottom:32px;">
+        AkimiTech ships a new tool every quarter. Here's a preview of what's on the bench.
       </p>
 
-      <div class="eyebrow reveal">Proficiency</div>
-      <div class="skills-grid reveal">
-        <div class="skill-chip">
-          <div class="skill-head">
-            <span class="skill-nm">Python</span>
-            <span class="skill-lvl">Advanced</span>
-          </div>
-          <div class="skill-track"><div class="skill-fill" data-w="100"></div></div>
+      <div class="roadmap-grid">
+        <div class="roadmap-item">
+          <div class="roadmap-status">In Development</div>
+          <h4>AkimiTech Inventory Manager</h4>
+          <p>Track stock, orders, and suppliers for shops and warehouses. Low-stock alerts and daily sales reports.</p>
         </div>
-        <div class="skill-chip">
-          <div class="skill-head">
-            <span class="skill-nm">JavaScript</span>
-            <span class="skill-lvl">Advanced</span>
-          </div>
-          <div class="skill-track"><div class="skill-fill" data-w="100"></div></div>
+        <div class="roadmap-item">
+          <div class="roadmap-status">Planning</div>
+          <h4>AkimiTech Clinic Records</h4>
+          <p>Patient records, appointments, and prescriptions for small clinics and health centers.</p>
         </div>
-        <div class="skill-chip">
-          <div class="skill-head">
-            <span class="skill-nm">C++</span>
-            <span class="skill-lvl">Advanced</span>
-          </div>
-          <div class="skill-track"><div class="skill-fill" data-w="100"></div></div>
-        </div>
-        <div class="skill-chip">
-          <div class="skill-head">
-            <span class="skill-nm">C</span>
-            <span class="skill-lvl">Advanced</span>
-          </div>
-          <div class="skill-track"><div class="skill-fill" data-w="100"></div></div>
-        </div>
-      </div>
-
-      <button class="btn-prim reveal" onclick="scrollToForm('Consultation')">Work With Me →</button>
-    </div>
-  </div>
-</section>
-
-<!-- ─── EXPERIENCE & EDUCATION ───────────────── -->
-<section id="experience">
-  <div class="section-max">
-    <div class="eyebrow reveal">Background</div>
-    <h2 class="sec-h2 reveal">Experience &amp; Education</h2>
-    <p class="sec-sub reveal" style="margin-bottom:40px;">A quick look at where I've worked, led, and studied.</p>
-
-    <div class="exp-cols">
-      <!-- Experience -->
-      <div class="reveal">
-        <div class="exp-col-title">💼 Experience</div>
-        <div class="tl">
-          <div class="tl-item">
-            <div class="tl-date">2023 — Present</div>
-            <div class="tl-role">CEO &amp; Founder</div>
-            <div class="tl-org">AkimiTech</div>
-          </div>
-          <div class="tl-item">
-            <div class="tl-date">2025 — 2026</div>
-            <div class="tl-role">Information Secretary</div>
-            <div class="tl-org">Ngok Lual Yak Students' Association, Universities &amp; Higher Learning Institutes, Juba</div>
-          </div>
-          <div class="tl-item">
-            <div class="tl-date">2025 — 2026</div>
-            <div class="tl-role">Deputy External Affairs Secretary</div>
-            <div class="tl-org">Ngok Lual Yak Students' Association, Universities &amp; Higher Learning Institutes, Juba</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Education -->
-      <div class="reveal">
-        <div class="exp-col-title">🎓 Education</div>
-        <div class="tl">
-          <div class="tl-item">
-            <div class="tl-date">2024 — Present</div>
-            <div class="tl-role">B.Sc. in Computer Science</div>
-            <div class="tl-org">University of Juba (UoJ)</div>
-          </div>
+        <div class="roadmap-item">
+          <div class="roadmap-status">Research</div>
+          <h4>AkimiTech SMS Notifier</h4>
+          <p>Send payment reminders and exam results to parents and clients via SMS — no smartphone required.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ─── SERVICES ──────────────────────────────── -->
-<section id="services">
-  <div class="section-max">
-    <div class="srv-intro">
+    <!-- ─── CTA ───────────────────────────────── -->
+    <div class="news-cta reveal">
       <div>
-        <div class="eyebrow reveal">Services</div>
-        <h2 class="sec-h2 reveal">What I Build for You</h2>
+        <div class="news-cta-title">Want a tool built for your work?</div>
+        <div class="news-cta-sub">Tell me what slows you down — I'll design software to fix it.</div>
       </div>
-      <p class="sec-sub reveal">
-        From elegant web interfaces to high-performance system software, every project is delivered with precision, clean code, and real attention to your requirements.
-      </p>
+      <a href="index.html#contact" class="btn-prim">Request a Custom Build →</a>
     </div>
-    <div class="srv-grid">
-      <div class="srv-card reveal">
-        <div class="srv-icon">🌐</div>
-        <h3>Web Development</h3>
-        <p>Modern, responsive websites and web applications built with clean code and a focus on performance and usability.</p>
-        <button class="btn-order" onclick="scrollToForm('Web Development')">Order Now</button>
-      </div>
-      <div class="srv-card reveal" style="transition-delay:0.1s">
-        <div class="srv-icon">🖥️</div>
-        <h3>Desktop Applications</h3>
-        <p>Cross-platform desktop software using Python and C++ for powerful, high-performance local workflows.</p>
-        <button class="btn-order" onclick="scrollToForm('Desktop Application')">Order Now</button>
-      </div>
-      <div class="srv-card reveal" style="transition-delay:0.2s">
-        <div class="srv-icon">🤖</div>
-        <h3>Automation Scripts</h3>
-        <p>Python-powered automation tools that eliminate repetitive tasks and save your team hours every week.</p>
-        <button class="btn-order" onclick="scrollToForm('Automation Script')">Order Now</button>
-      </div>
-      <div class="srv-card reveal" style="transition-delay:0.05s">
-        <div class="srv-icon">⚙️</div>
-        <h3>System Programming</h3>
-        <p>Low-level system software and utilities in C and C++ engineered for reliability and maximum performance.</p>
-        <button class="btn-order" onclick="scrollToForm('System Programming')">Order Now</button>
-      </div>
-      <div class="srv-card reveal" style="transition-delay:0.15s">
-        <div class="srv-icon">📊</div>
-        <h3>Data Solutions</h3>
-        <p>Data pipelines, analysis scripts, and dashboards that turn raw data into actionable business insights.</p>
-        <button class="btn-order" onclick="scrollToForm('Data Solutions')">Order Now</button>
-      </div>
-      <div class="srv-card reveal" style="transition-delay:0.25s">
-        <div class="srv-icon">💡</div>
-        <h3>Tech Consultation</h3>
-        <p>Strategic technology advice to help you make the right software decisions for your business or project.</p>
-        <button class="btn-order" onclick="scrollToForm('Tech Consultation')">Book a Session</button>
-      </div>
-    </div>
+
   </div>
 </section>
 
-<!-- ─── CONTACT ────────────────────────────────── -->
-<section id="contact">
-  <div class="contact-grid">
-    <!-- Left: info -->
-    <div>
-      <div class="eyebrow reveal">Contact</div>
-      <h2 class="sec-h2 reveal">Let's Build Something Great</h2>
-      <p class="sec-sub reveal">Have a project in mind? Reach out directly or fill in the form — I respond within 24 hours.</p>
-
-      <div class="c-items reveal">
-        <div class="c-item">
-          <div class="c-icon">📧</div>
-          <div>
-            <div class="c-label">Email</div>
-            <div class="c-val"><a href="mailto:akim1dau2@gmail.com" class="contact-link">akim1dau2@gmail.com</a></div>
-          </div>
-        </div>
-        <div class="c-item">
-          <div class="c-icon">📞</div>
-          <div>
-            <div class="c-label">Phone / WhatsApp</div>
-            <div class="c-val"><a href="https://wa.me/211922708878" target="_blank" rel="noopener" class="contact-link">+211 922 708 878</a></div>
-          </div>
-        </div>
-        <div class="c-item">
-          <div class="c-icon">📍</div>
-          <div>
-            <div class="c-label">Location</div>
-            <div class="c-val">Juba, Republic of South Sudan</div>
-          </div>
-        </div>
-        <div class="c-item">
-          <div class="c-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color:#1877F2;"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg></div>
-          <div>
-            <div class="c-label">Facebook</div>
-            <div class="c-val"><a href="https://www.facebook.com/AkimDmaith" target="_blank" rel="noopener" class="contact-link">facebook.com/AkimDmaith</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Right: Netlify Form -->
-    <div class="form-box reveal">
-      <div class="form-box-title">Request a Service</div>
-      
-      <form name="client-request" method="POST" data-netlify="true" id="clientForm">
-        <!-- Required hidden input for Netlify -->
-        <input type="hidden" name="form-name" value="client-request" />
-
-        <div class="fg">
-          <label>Your Name</label>
-          <input type="text" name="name" placeholder="Full name" required />
-        </div>
-
-        <div class="fg">
-          <label>Company Name</label>
-          <input type="text" name="company" placeholder="Your company" required />
-        </div>
-
-        <div class="fg">
-          <label>Service Interested In</label>
-          <select name="service" id="formService" required>
-            <option value="">-- Select a service --</option>
-            <option value="Web Development">Web Development</option>
-            <option value="Desktop Application">Desktop Application</option>
-            <option value="Automation Script">Automation Script</option>
-            <option value="System Programming">System Programming</option>
-            <option value="Data Solutions">Data Solutions</option>
-            <option value="Tech Consultation">Tech Consultation</option>
-            <option value="Other">Other</option>
-          </select>
-        </div>
-
-        <div class="fg">
-          <label>Expected Duration</label>
-          <select name="duration" required>
-            <option value="">-- Select duration --</option>
-            <option value="Less than 1 month">Less than 1 month</option>
-            <option value="1 to 3 months">1 to 3 months</option>
-            <option value="3 to 6 months">3 to 6 months</option>
-            <option value="More than 6 months">More than 6 months</option>
-          </select>
-        </div>
-
-        <div class="fg">
-          <label>Email Address</label>
-          <input type="email" name="email" placeholder="you@example.com" required />
-        </div>
-
-        <!-- Payment Policy Notice -->
-        <div style="background-color: rgba(255, 193, 7, 0.1); border: 1px solid rgba(255, 193, 7, 0.3); padding: 15px; margin-bottom: 15px; border-radius: 8px;">
-          <p style="margin-top: 0; margin-bottom: 8px; font-weight: 600; color: #ffc107;">⚠️ Important Payment Policy</p>
-          <p style="font-size: 0.85rem; margin-bottom: 12px; opacity: 0.9;">To secure your project slot and begin work, <strong>full payment (or a deposit) must be made upfront</strong>. We will contact you with an invoice and payment link after reviewing your request.</p>
-          
-          <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; font-size: 0.85rem;">
-            <input type="checkbox" name="payment-agreement" required style="margin-top: 3px; width: auto;" />
-            <span>I understand and agree that payment must be made before services commence.</span>
-          </label>
-        </div>
-
-        <button type="submit" class="btn-prim" style="width:100%">Submit Request →</button>
-      </form>
-
-      <div class="success-note" id="cSuccess" style="display:none;">✅ Request received! I'll get back to you within 24 hours.</div>
-    </div>
-  </div>
-</section>
-
-<!-- ─── FOOTER ─────────────────────────────────── -->
+<!-- ─── FOOTER ─────────────────────────────── -->
 <footer>
   <p>© 2026 <strong>AkimiTech</strong> · Built by Akim D. Malith · Juba, Republic of South Sudan</p>
-  <p style="margin-top:10px;"><a href="https://www.facebook.com/AkimDmaith" target="_blank" rel="noopener" class="contact-link" style="display:inline-flex;align-items:center;gap:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg>Facebook</a></p>
+  <p style="margin-top:10px;">
+    <a href="https://www.facebook.com/AkimDmaith" target="_blank" rel="noopener" class="contact-link" style="display:inline-flex;align-items:center;gap:6px;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg>
+      Facebook
+    </a>
+  </p>
   <p style="margin-top:6px;font-size:0.74rem;opacity:0.6;">Python · C · C++ · JavaScript</p>
 </footer>
 
-<script src="script.js"></script>
-<script src="index.js"></script>
-
+<!-- ─── SCRIPTS ─────────────────────────────── -->
 <script>
-  // 1. Function to scroll to the form and pre-select the service
-  function scrollToForm(serviceName) {
-    const formSection = document.getElementById('contact');
-    const serviceDropdown = document.getElementById('formService');
-    
-    // Scroll to the contact section
-    formSection.scrollIntoView({ behavior: 'smooth' });
-    
-    // Pre-select the service in the dropdown if it matches an option
-    if (serviceDropdown) {
-      for (let i = 0; i < serviceDropdown.options.length; i++) {
-        if (serviceDropdown.options[i].value === serviceName) {
-          serviceDropdown.selectedIndex = i;
-          break;
-        }
-      }
+  // ─── Theme toggle (same as main site) ───
+  const root = document.documentElement;
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  root.setAttribute('data-theme', savedTheme);
+  updateThemeLabel(savedTheme);
+
+  function toggleTheme() {
+    const current = root.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    updateThemeLabel(next);
+  }
+
+  function updateThemeLabel(theme) {
+    const icon = document.getElementById('themeIcon');
+    const label = document.getElementById('themeLabel');
+    if (!icon || !label) return;
+    if (theme === 'dark') {
+      icon.textContent = '🌙';
+      label.textContent = 'Dark';
+    } else {
+      icon.textContent = '☀️';
+      label.textContent = 'Light';
     }
   }
 
-  // 2. Handle Netlify Form Submission without page reload
-  const form = document.getElementById('clientForm');
-  const successNote = document.getElementById('cSuccess');
-
-  if (form) {
-    form.addEventListener('submit', function(e) {
-      e.preventDefault(); // Stop the page from reloading
-      
-      const formData = new FormData(form);
-      
-      fetch('/', {
-        method: 'POST',
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString()
-      })
-      .then(() => {
-        form.style.display = 'none'; // Hide the form
-        successNote.style.display = 'block'; // Show success message
-      })
-      .catch((error) => {
-        alert('Error submitting form: ' + error);
-      });
-    });
+  // ─── Mobile nav ───
+  function toggleMobileNav() {
+    document.getElementById('mobileNav').classList.toggle('open');
   }
+  function closeMobileNav() {
+    document.getElementById('mobileNav').classList.remove('open');
+  }
+
+  // ─── Reveal-on-scroll ───
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 </script>
 
 </body>
