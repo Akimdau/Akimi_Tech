@@ -126,3 +126,13 @@ async function sendMsg(){
     btn.disabled=false; btn.innerHTML=originalText;
   }
 }
+
+function toggleMobileNav() {
+  const nav = document.getElementById('mobileNav');
+  nav.classList.toggle('open');
+}
+
+function closeMobileNav() {
+  const nav = document.getElementById('mobileNav');
+  nav.classList.remove('open');
+}
